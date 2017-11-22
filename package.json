@@ -9,7 +9,7 @@
     "dev": "npm run test",
     "build": "webpack --config webpack.config.js",
     "lint": "eslint ./src/**/*.js",
-    "precommit": "npm lint && npm test"
+    "precommit": "npm run lint && npm run test"
   },
   "author": "Eyal Cohen <eyal@myplay.com>",
   "license": "ISC",
