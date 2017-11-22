@@ -1,0 +1,38 @@
+{
+  "name": "myplay-modules-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for building and expose myplay bussines logic as modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register ./src/**/*.test.js",
+    "cover": "nyc npm test",
+    "dev": "npm run test",
+    "build": "webpack --config webpack.config.js",
+    "lint": "eslint ./src/**/*.js",
+    "precommit": "npm lint && npm test"
+  },
+  "author": "Eyal Cohen <eyal@myplay.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.32",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.1",
+    "babel-register": "6.26.0",
+    "chai": "4.1.2",
+    "eslint": "4.11.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.8.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-prettier": "2.3.1",
+    "eslint-plugin-react": "7.5.1",
+    "husky": "0.14.3",
+    "lint-staged": "5.0.0",
+    "mocha": "4.0.1",
+    "nyc": "11.3.0",
+    "prettier": "1.8.2",
+    "prettier-eslint": "8.2.2",
+    "webpack": "3.8.1"
+  }
+}
