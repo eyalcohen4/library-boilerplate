@@ -10,8 +10,12 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: `${LIBRARY_NAME}.js`,
-    library: LIBRARY_NAME,
+    filename: `index.js`,
+    library: {
+      root: LIBRARY_NAME,
+      amd: LIBRARY_NAME,
+      commonjs: LIBRARY_NAME
+    },
     libraryTarget: 'umd'
   },
   module: {

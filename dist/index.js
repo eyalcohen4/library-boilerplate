@@ -92,4 +92,4 @@ exports.default = add;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=add.js.map
+//# sourceMappingURL=index.js.map

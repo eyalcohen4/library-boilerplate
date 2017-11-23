@@ -2,7 +2,7 @@
   "name": "myplay-modules-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for writing ES6 libraries",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha --require babel-register ./src/**/*.test.js",
     "cover": "nyc npm test",
