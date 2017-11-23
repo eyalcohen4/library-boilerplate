@@ -13,9 +13,9 @@
   },
   "author": "Eyal Cohen <eyal@myplay.com>",
   "license": "ISC",
-  "files": {
-    "dist"
-  },
+  "files": [
+    "dist/"
+  ],
   "devDependencies": {
     "@babel/core": "7.0.0-beta.32",
     "babel-loader": "7.1.2",
