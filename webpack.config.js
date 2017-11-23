@@ -1,7 +1,9 @@
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 
-const LIBRARY_NAME = 'lib';
+const LIBRARY_NAME = 'add';
+const DIST_FOLDER = path.resolve(__dirname, 'dist');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
@@ -22,5 +24,6 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [new CleanWebpackPlugin(DIST_FOLDER)]
 };
