@@ -4,12 +4,13 @@
   "description": "Boilerplate for writing ES6 libraries",
   "main": "dist/index.js",
   "scripts": {
+    "pretest": "npm run lint",
     "test": "mocha --require babel-register ./src/**/*.test.js",
     "cover": "nyc npm test",
     "dev": "npm run test",
     "build": "webpack --config webpack.config.js",
     "lint": "eslint ./src/**/*.js",
-    "precommit": "npm run lint && npm run test"
+    "precommit": "npm run test"
   },
   "author": "Eyal Cohen <eyal@myplay.com>",
   "license": "ISC",
