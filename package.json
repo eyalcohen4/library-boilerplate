@@ -1,5 +1,5 @@
 {
-  "name": "myplay-modules-boilerplate",
+  "name": "library-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for writing ES6 libraries",
   "main": "dist/index.js",
